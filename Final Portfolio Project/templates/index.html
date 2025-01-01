@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% include 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
@@ -20,105 +20,104 @@
   
         <div class="projects-grid">
           <a
-            href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+            href="#"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+              src="/static/Icons/two.jpg"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Tribute Page
+              Document Notarization
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
-            href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+            href="#"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+              src="/static/Icons/stamp.png"
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
-              Random Quote Machine
+              Contract Notarization
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
-            href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+            href="#"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+              src="/static/Icons/Pens.jpg"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              JavaScript Calculator
+              Wills and Testament
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
-            href="https://codepen.io/freeCodeCamp/full/mVEJag"
+            href="#"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+              src="/static/Icons/certified.png"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Map Data Across the Globe
+              Certified True Copy
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
-            href="https://codepen.io/freeCodeCamp/full/wGqEga"
+            href="#"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+              src="/static/Icons/oath.png"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Wikipedia Viewer
+              Oaths and Declaration
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
-            href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+            href="#"
             target="_blank"
             class="project project-tile"
           >
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+              src="/static/Icons/document.png"
               alt="project"
             />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Tic Tac Toe Game
+              Affidavit Preparation
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
         </div>
   
         <a
-          href="https://codepen.io/FreeCodeCamp/"
+          href=""
           class="btn btn-show-all"
           target="_blank"
           >Show all<i class="fas fa-chevron-right"></i
@@ -173,11 +172,11 @@
     </p>
     <p>
       &copy; Created for
-      <a href="https://www.freecodecamp.com/" target="_blank"
-        >freeCodeCamp <i class="fab fa-free-code-camp"></i
-      ></a>
+      <a href="https://www.alxafrica.com/" target="_blank">
+        ALX Africa 
+      </a>
     </p>
   </footer>
-
+  {% include 'about.html' %}
   <!-- END FOOTER SECTION -->
 {% endblock %}
